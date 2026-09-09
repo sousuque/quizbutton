@@ -1,81 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
-  <defs>
-    <radialGradient id="beaconGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-      <stop offset="0%" stop-color="#FFF" stop-opacity="0.9"/>
-      <stop offset="35%" stop-color="#FFDD55" stop-opacity="0.8"/>
-      <stop offset="70%" stop-color="#EE3324" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#EE3324" stop-opacity="0"/>
-    </radialGradient>
-
-    <linearGradient id="beaconDome" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#CC1111"/>
-      <stop offset="25%" stop-color="#E52B20"/>
-      <stop offset="60%" stop-color="#F24438"/>
-      <stop offset="90%" stop-color="#D61C1C"/>
-      <stop offset="100%" stop-color="#B30909"/>
-    </linearGradient>
-
-    <linearGradient id="baseTop" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#3A3D40"/>
-      <stop offset="100%" stop-color="#1A1C1E"/>
-    </linearGradient>
-
-    <linearGradient id="baseFrontLeft" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#2D3033"/>
-      <stop offset="100%" stop-color="#18191B"/>
-    </linearGradient>
-
-    <linearGradient id="baseFrontRight" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#1F2124"/>
-      <stop offset="100%" stop-color="#0F1012"/>
-    </linearGradient>
-
-    <linearGradient id="metalRing" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#9AA0A6"/>
-      <stop offset="50%" stop-color="#E8EAED"/>
-      <stop offset="100%" stop-color="#80868B"/>
-    </linearGradient>
-
-    <filter id="handDrawn" x="-10%" y="-10%" width="120%" height="120%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/>
-      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.5" xChannelSelector="R" yChannelSelector="G"/>
-    </filter>
-  </defs>
-
-  <g filter="url(#handDrawn)">
-    <path d="M280 230 C310 233, 330 240, 370 235 C375 234, 380 238, 375 242 C330 250, 310 241, 280 238 Z" fill="#151618" stroke="#151618" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-
-    <g stroke="#E52224" stroke-width="11" stroke-linecap="round">
-      <line x1="88" y1="58" x2="105" y2="72" />
-      <line x1="120" y1="36" x2="128" y2="56" />
-      <line x1="172" y1="28" x2="172" y2="50" />
-      <line x1="222" y1="38" x2="212" y2="57" />
-      <line x1="250" y1="62" x2="232" y2="76" />
-    </g>
-
-    <polygon points="50,190 170,198 300,180 180,172" fill="url(#baseTop)" stroke="#1A1C1E" stroke-width="7" stroke-linejoin="round"/>
-    
-    <polygon points="50,190 170,198 170,265 50,250" fill="url(#baseFrontLeft)" stroke="#1A1C1E" stroke-width="7" stroke-linejoin="round"/>
-    
-    <polygon points="170,198 300,180 300,242 170,265" fill="url(#baseFrontRight)" stroke="#1A1C1E" stroke-width="7" stroke-linejoin="round"/>
-
-    <g id="knob">
-      <ellipse cx="230" cy="186" rx="14" ry="7" fill="#151618" stroke="#1A1C1E" stroke-width="4"/>
-      <path d="M216 162 L216 186 C216 190, 244 190, 244 186 L244 162 Z" fill="#2D3033" stroke="#1A1C1E" stroke-width="4" stroke-linejoin="round"/>
-      <ellipse cx="230" cy="162" rx="14" ry="7" fill="#4A4D50" stroke="#1A1C1E" stroke-width="3"/>
-      <path d="M216 172 C216 176, 244 176, 244 172 C244 170, 216 170, 216 172 Z" fill="url(#metalRing)"/>
-    </g>
-
-    <g id="beaconLight">
-      <path d="M92 192 L92 182 C92 174, 238 174, 238 182 L238 192 C238 200, 92 200, 92 192 Z" fill="url(#metalRing)" stroke="#1A1C1E" stroke-width="6" stroke-linejoin="round"/>
-
-      <path d="M94 180 C88 110, 105 60, 165 60 C225 60, 242 110, 236 180 C236 189, 94 189, 94 180 Z" fill="url(#beaconDome)" stroke="#1A1C1E" stroke-width="7" stroke-linejoin="round"/>
-
-      <ellipse cx="165" cy="125" rx="55" ry="45" fill="url(#beaconGlow)"/>
-      <circle cx="160" cy="120" r="28" fill="#FFFFFF" opacity="0.9"/>
-
-      <ellipse cx="130" cy="88" rx="14" ry="9" fill="#FFFFFF" opacity="0.85" transform="rotate(-20 130 88)"/>
-      <path d="M110 115 C108 135, 110 155, 114 168" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.4"/>
-    </g>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="16" fill="#12162a" />
+  
+  <ellipse cx="32" cy="44" rx="22" ry="10" fill="#212849" />
+  <ellipse cx="32" cy="42" rx="20" ry="8" fill="#2c3358" />
+  
+  <path d="M 16,30 L 16,36 C 16,42 48,42 48,36 L 48,30 Z" fill="#c93638" />
+  
+  <ellipse cx="32" cy="30" rx="16" ry="7" fill="#e8484b" />
+  
+  <ellipse cx="28" cy="28" rx="8" ry="3" fill="#ffffff" opacity="0.3" />
+  
+  <path d="M 28,12 C 28,8 36,8 36,12 C 36,15 32,16 32,19" 
+        stroke="#f0b429" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <circle cx="32" cy="23" r="2" fill="#f0b429" />
 </svg>
